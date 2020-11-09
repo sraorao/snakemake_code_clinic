@@ -1,3 +1,0 @@
-CreateRuleException in line 36 of /home/srao/PycharmProjects/snakemake_cc/Snakefile_wildcards_solution.smk:
-The name add_num_to_output_file is already used by another rule
-  File "/home/srao/PycharmProjects/snakemake_cc/Snakefile_wildcards_solution.smk", line 36, in <module>

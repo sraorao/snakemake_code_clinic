@@ -1,3 +1,0 @@
-WorkflowError in line 4 of /home/srao/PycharmProjects/testing_one/Snakefile:
-Config file  not found.
-  File "/home/srao/PycharmProjects/testing_one/Snakefile", line 4, in <module>

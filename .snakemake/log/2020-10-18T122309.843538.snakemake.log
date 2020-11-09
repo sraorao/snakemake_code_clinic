@@ -1,3 +1,0 @@
-AttributeError in line 4 of /home/srao/PycharmProjects/testing_one/Snakefile:
-'Rules' object has no attribute 'join_files_with_python'
-  File "/home/srao/PycharmProjects/testing_one/Snakefile", line 4, in <module>

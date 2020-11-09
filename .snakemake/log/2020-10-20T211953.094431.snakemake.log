@@ -1,3 +1,0 @@
-KeyError in line 2 of /home/srao/PycharmProjects/snakemake_cc/Snakefile_wildcards.smk:
-'WORKING_DIR'
-  File "/home/srao/PycharmProjects/snakemake_cc/Snakefile_wildcards.smk", line 2, in <module>
