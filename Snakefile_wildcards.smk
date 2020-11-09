@@ -29,7 +29,7 @@ rule edit_text:
 
 # TODO
 # rule add_num_to_output_file:
-#     """Create a rule to add num to the end of the edited files.
+#     """Create a rule to add the file/sample number {num} to the end of the text in the edited files.
 #     The new files should be in a folder named numbered_files"""
 #     input:
 #     output:

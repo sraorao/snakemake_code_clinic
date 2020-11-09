@@ -33,6 +33,11 @@ I have built up the concepts step-by-step with each individual workflow. Going t
 the most sense. Go through each of the Snakefiles below before running them, to understand Snakemake syntax.
 It is not important for you to know the shell commands themselves, as you can substitute them with any other task you like.
 
+First, clone this repo (all code preceded by `$` is to be entered at the terminal (command-line):
+```
+$ git clone https://github.com/sraorao/snakemake_code_clinic
+$ cd snakemake_code_clinic
+```
 ### `Snakefile`
 This introduces the concepts of rules, input and output, using shell commands and external scripts and
 how to use the `expand()` function. It is easiest to run each rule in this file separately by specifying the rule name 
@@ -51,12 +56,18 @@ shell commands or python. We then compare the 2 joined files.
 ```
 $ snakemake --snakefile Snakefile_3rules.smk
 ```
-### `Snakefile_wildcards`
+### `Snakefile_wildcards.smk`
 This file introduces the concept of wildcards. When you have many input files with a consist naming pattern
 and you want the same tasks done on them, a workflow management software like Snakemake makes your job much easier. 
 We created some files in the `data_files/` folder earlier (the `generate_data_files` rule in `Snakefile`) which will
- be used as input for this workflow. The aim is to take each of the 10 txt files in  
+ be used as input for this workflow. The aim is to take each of the 10 text files and edit them and save them in 
+ `edited_files/`. 
  Run this file as follows:
 ```
 $ snakemake --snakefile Snakefile_wildcards.smk
 ```
+See if you can make the `input` for rule `all` more concise by using the `expand()` function.
+
+Now, read the TODO section and see if you can write two more rules following the instructions in the Snakefile
+and modify `input` for rule `all` accordingly. A possible solution for this can be seen in the `Snakefile_wildcards_solution.smk`
+file. 
