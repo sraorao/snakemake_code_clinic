@@ -5,12 +5,12 @@ workdir: config["WORKING_FOLDER"]
 
 rule all:
     input:
-        "letters_and_numbers.txt",
-        "letters_and_numbers_python.txt",
+        # "letters_and_numbers.txt",
+        # "letters_and_numbers_python.txt",
         "comparison.txt"
 
 rule generate_files:
-    input: "Snakefile_3rules.smk"
+    input: "Snakefile_3rules.smk" # dummy input
     output:
         letters = "letters.txt",
         numbers = "numbers.txt"

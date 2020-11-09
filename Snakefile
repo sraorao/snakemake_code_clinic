@@ -1,5 +1,5 @@
 # configfile: ""
-workdir: "/home/srao/PycharmProjects/snakemake_cc"
+# workdir: "/home/srao/PycharmProjects/snakemake_cc"
 
 
 # 1 --------------------------------------------------------------------------------------------------------------------

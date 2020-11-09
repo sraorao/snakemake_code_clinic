@@ -1,0 +1,129 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	10	edit_text
+	11
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_4.txt
+    output: edited_files/snakemake_output_4.txt
+    jobid: 5
+    wildcards: num=4
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 5.
+1 of 11 steps (9%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_2.txt
+    output: edited_files/snakemake_output_2.txt
+    jobid: 3
+    wildcards: num=2
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 3.
+2 of 11 steps (18%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_0.txt
+    output: edited_files/snakemake_output_0.txt
+    jobid: 1
+    wildcards: num=0
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 1.
+3 of 11 steps (27%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_9.txt
+    output: edited_files/snakemake_output_9.txt
+    jobid: 10
+    wildcards: num=9
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 10.
+4 of 11 steps (36%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_7.txt
+    output: edited_files/snakemake_output_7.txt
+    jobid: 8
+    wildcards: num=7
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 8.
+5 of 11 steps (45%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_5.txt
+    output: edited_files/snakemake_output_5.txt
+    jobid: 6
+    wildcards: num=5
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 6.
+6 of 11 steps (55%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_3.txt
+    output: edited_files/snakemake_output_3.txt
+    jobid: 4
+    wildcards: num=3
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 4.
+7 of 11 steps (64%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_1.txt
+    output: edited_files/snakemake_output_1.txt
+    jobid: 2
+    wildcards: num=1
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 2.
+8 of 11 steps (73%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_6.txt
+    output: edited_files/snakemake_output_6.txt
+    jobid: 7
+    wildcards: num=6
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 7.
+9 of 11 steps (82%) done
+
+[Wed Oct 28 11:56:32 2020]
+rule edit_text:
+    input: data_files/snakemake_input_8.txt
+    output: edited_files/snakemake_output_8.txt
+    jobid: 9
+    wildcards: num=8
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 9.
+10 of 11 steps (91%) done
+
+[Wed Oct 28 11:56:32 2020]
+localrule all:
+    input: edited_files/snakemake_output_0.txt, edited_files/snakemake_output_1.txt, edited_files/snakemake_output_2.txt, edited_files/snakemake_output_3.txt, edited_files/snakemake_output_4.txt, edited_files/snakemake_output_5.txt, edited_files/snakemake_output_6.txt, edited_files/snakemake_output_7.txt, edited_files/snakemake_output_8.txt, edited_files/snakemake_output_9.txt
+    jobid: 0
+
+[Wed Oct 28 11:56:32 2020]
+Finished job 0.
+11 of 11 steps (100%) done
+Complete log: /home/srao/PycharmProjects/snakemake_cc/.snakemake/log/2020-10-28T115631.991462.snakemake.log

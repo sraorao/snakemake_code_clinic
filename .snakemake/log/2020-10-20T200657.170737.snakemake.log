@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	count_lines
+	1
+
+[Tue Oct 20 20:06:57 2020]
+rule count_lines:
+    input: jabberwocky.txt
+    output: count.txt
+    jobid: 0
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 7 of /home/srao/PycharmProjects/testing_one/Snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+count.txt
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 566, in handle_job_success
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 249, in handle_job_success
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-20T200657.170737.snakemake.log

@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	count_lines
+	1
+
+[Tue Oct 20 20:07:45 2020]
+rule count_lines:
+    input: jabberwocky.txt
+    output: count.txt
+    jobid: 0
+
+[Tue Oct 20 20:07:45 2020]
+Error in rule count_lines:
+    jobid: 0
+    output: count.txt
+    shell:
+        cat jabberwocky.txt | tr '[:upper:]' '[:lower:]' | grep -o '([a-z])+' 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-20T200745.597865.snakemake.log

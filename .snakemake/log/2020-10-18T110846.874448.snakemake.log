@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 40
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	generate_files
+	1
+
+[Sun Oct 18 11:08:46 2020]
+rule generate_files:
+    input: testing.py
+    output: letters.txt
+    jobid: 0
+
+[Sun Oct 18 11:08:46 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-18T110846.874448.snakemake.log

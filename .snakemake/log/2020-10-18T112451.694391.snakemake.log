@@ -1,0 +1,12 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	generate_files
+	1
+
+[Sun Oct 18 11:24:51 2020]
+rule generate_files:
+    input: testing.py
+    output: letters.txt, numbers.txt
+    jobid: 0
+

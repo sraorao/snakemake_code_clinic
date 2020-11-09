@@ -1,1 +1,7 @@
 WORKING_FOLDER: "/home/srao/PycharmProjects/snakemake_cc"
+
+REF: "hg38.fa"
+
+GATK_PARAMS:
+  P1: "4"
+  P2: "3"

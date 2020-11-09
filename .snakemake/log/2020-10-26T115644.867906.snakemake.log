@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	plot_counts
+	1
+
+[Mon Oct 26 11:56:44 2020]
+rule plot_counts:
+    input: redup_count.txt
+    output: counts_plot.pdf
+    jobid: 0
+
+[Mon Oct 26 11:56:45 2020]
+Error in rule plot_counts:
+    jobid: 0
+    output: counts_plot.pdf
+
+RuleException:
+CalledProcessError in line 53 of /home/srao/PycharmProjects/snakemake_cc/Snakefile:
+Command 'set -euo pipefail;  Rscript --vanilla /home/srao/PycharmProjects/snakemake_cc/.snakemake/scripts/tmp228vgbk5.plot_counts.R' returned non-zero exit status 1.
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 2229, in run_wrapper
+  File "/home/srao/PycharmProjects/snakemake_cc/Snakefile", line 53, in __rule_plot_counts
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 551, in _callback
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 537, in cached_or_run
+  File "/home/srao/bin/miniconda3/envs/snakemake_env/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 2241, in run_wrapper
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/srao/PycharmProjects/snakemake_cc/.snakemake/log/2020-10-26T115644.867906.snakemake.log

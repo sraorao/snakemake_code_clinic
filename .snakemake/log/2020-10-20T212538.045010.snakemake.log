@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 7 of /home/srao/PycharmProjects/snakemake_cc/Snakefile_wildcards.smk:
+Wildcards in input files cannot be determined from output files:
+'num1'

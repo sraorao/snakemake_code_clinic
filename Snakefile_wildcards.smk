@@ -1,5 +1,8 @@
 configfile: "config.yaml"
 workdir: config["WORKING_FOLDER"]
+
+reference_file = config["REF"]
+print(reference_file)
 # shell.executable("/bin/bash")
 # shell.prefix("source ~/.bashrc; ")
 
@@ -22,7 +25,6 @@ rule all:
 rule edit_text:
     input: "data_files/snakemake_input_{num}.txt"
     output: "edited_files/snakemake_output_{num}.txt"
-    params: "{num}"
     shell: "cat {input} | sed 's/no./number/' > {output}"
 
 # TODO

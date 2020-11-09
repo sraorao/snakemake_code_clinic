@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	generate_data_files
+	1
+
+[Fri Oct 23 09:25:44 2020]
+rule generate_data_files:
+    input: Snakefile
+    output: data_files/snakemake_input_0.txt, data_files/snakemake_input_1.txt, data_files/snakemake_input_2.txt, data_files/snakemake_input_3.txt, data_files/snakemake_input_4.txt, data_files/snakemake_input_5.txt, data_files/snakemake_input_6.txt, data_files/snakemake_input_7.txt, data_files/snakemake_input_8.txt, data_files/snakemake_input_9.txt
+    jobid: 0
+
+[Fri Oct 23 09:25:44 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /home/srao/PycharmProjects/snakemake_cc/.snakemake/log/2020-10-23T092544.246289.snakemake.log

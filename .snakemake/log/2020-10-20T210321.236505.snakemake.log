@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 10 of /home/srao/PycharmProjects/snakemake_cc/Snakefile_3rules.smk:
+Missing input files for rule generate_files:
+Snakefile_3rules

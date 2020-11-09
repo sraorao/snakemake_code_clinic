@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	count_double_letters
+	1
+
+[Tue Oct 20 20:44:34 2020]
+rule count_double_letters:
+    input: jabberwocky.txt
+    output: count2.txt
+    jobid: 0
+
+[Tue Oct 20 20:44:34 2020]
+Error in rule count_double_letters:
+    jobid: 0
+    output: count2.txt
+    shell:
+        
+        cat jabberwocky.txt |         tr [:upper:] [:lower:] |         grep -oP '([a-z])\1+' |         sort |         uniq -c |         | sed -e 's/^\s*//' > count2.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-20T204434.437082.snakemake.log

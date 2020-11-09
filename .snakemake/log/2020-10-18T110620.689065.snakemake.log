@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 4 of /home/srao/PycharmProjects/testing_one/Snakefile:
+Missing input files for rule generate_files:
+testing.py

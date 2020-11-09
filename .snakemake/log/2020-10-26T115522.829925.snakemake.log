@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	count_reduplicated_words
+	1
+
+[Mon Oct 26 11:55:22 2020]
+rule count_reduplicated_words:
+    input: reduplication_poetry.txt
+    output: redup_count.txt
+    jobid: 0
+
+[Mon Oct 26 11:55:22 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /home/srao/PycharmProjects/snakemake_cc/.snakemake/log/2020-10-26T115522.829925.snakemake.log

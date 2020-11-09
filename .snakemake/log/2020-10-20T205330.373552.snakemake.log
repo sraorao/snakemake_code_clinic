@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 46 of /home/srao/PycharmProjects/testing_one/Snakefile:
+Missing input files for rule plot_counts:
+counts2.txt

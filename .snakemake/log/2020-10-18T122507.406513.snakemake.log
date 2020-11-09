@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	join_files_with_python
+	2
+
+[Sun Oct 18 12:25:07 2020]
+rule join_files_with_python:
+    input: letters.txt, numbers.txt
+    output: letters_and_numbers_python.txt
+    jobid: 2
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-18T122507.406513.snakemake.log

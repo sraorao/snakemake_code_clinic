@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	compare_files
+	2
+
+[Sun Oct 18 12:42:18 2020]
+rule compare_files:
+    input: letters_and_numbers.txt, letters_and_numbers_python.txt
+    output: comparison.txt
+    jobid: 3
+
+[Sun Oct 18 12:42:18 2020]
+Finished job 3.
+1 of 2 steps (50%) done
+
+[Sun Oct 18 12:42:18 2020]
+localrule all:
+    input: letters_and_numbers.txt, letters_and_numbers_python.txt, comparison.txt
+    jobid: 0
+
+[Sun Oct 18 12:42:18 2020]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /home/srao/PycharmProjects/testing_one/.snakemake/log/2020-10-18T124218.158150.snakemake.log
